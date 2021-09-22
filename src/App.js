@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Inicio from './Inicio';
 import Home from './Home';
 import Create from './Create'
 import Agregar  from './Agregar';
@@ -14,7 +13,7 @@ function App() {
   return ( 
   <BrowserRouter>
    <Switch>
-     <Route path="/Resultados" nombreClient={nClient}> 
+     <Route path="/Resultados"> 
         <Resultados />
       </Route> 
      <Route path="/Gestion"> 
