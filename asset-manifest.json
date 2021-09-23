@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/raea/static/css/main.1252269b.chunk.css",
-    "main.js": "/raea/static/js/main.0adb8f9c.chunk.js",
-    "main.js.map": "/raea/static/js/main.0adb8f9c.chunk.js.map",
+    "main.js": "/raea/static/js/main.2b2f8c58.chunk.js",
+    "main.js.map": "/raea/static/js/main.2b2f8c58.chunk.js.map",
     "runtime-main.js": "/raea/static/js/runtime-main.3634473d.js",
     "runtime-main.js.map": "/raea/static/js/runtime-main.3634473d.js.map",
     "static/js/2.438e15fb.chunk.js": "/raea/static/js/2.438e15fb.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3634473d.js",
     "static/js/2.438e15fb.chunk.js",
     "static/css/main.1252269b.chunk.css",
-    "static/js/main.0adb8f9c.chunk.js"
+    "static/js/main.2b2f8c58.chunk.js"
   ]
 }
