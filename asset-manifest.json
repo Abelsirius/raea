@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/raea/static/css/main.f652465e.chunk.css",
-    "main.js": "/raea/static/js/main.a3e00271.chunk.js",
-    "main.js.map": "/raea/static/js/main.a3e00271.chunk.js.map",
+    "main.css": "/raea/static/css/main.d15256c5.chunk.css",
+    "main.js": "/raea/static/js/main.095d70a4.chunk.js",
+    "main.js.map": "/raea/static/js/main.095d70a4.chunk.js.map",
     "runtime-main.js": "/raea/static/js/runtime-main.94f4c087.js",
     "runtime-main.js.map": "/raea/static/js/runtime-main.94f4c087.js.map",
-    "static/js/2.34eccba7.chunk.js": "/raea/static/js/2.34eccba7.chunk.js",
-    "static/js/2.34eccba7.chunk.js.map": "/raea/static/js/2.34eccba7.chunk.js.map",
+    "static/js/2.bd6c19aa.chunk.js": "/raea/static/js/2.bd6c19aa.chunk.js",
+    "static/js/2.bd6c19aa.chunk.js.map": "/raea/static/js/2.bd6c19aa.chunk.js.map",
     "index.html": "/raea/index.html",
-    "static/css/main.f652465e.chunk.css.map": "/raea/static/css/main.f652465e.chunk.css.map",
-    "static/js/2.34eccba7.chunk.js.LICENSE.txt": "/raea/static/js/2.34eccba7.chunk.js.LICENSE.txt",
+    "static/css/main.d15256c5.chunk.css.map": "/raea/static/css/main.d15256c5.chunk.css.map",
+    "static/js/2.bd6c19aa.chunk.js.LICENSE.txt": "/raea/static/js/2.bd6c19aa.chunk.js.LICENSE.txt",
     "static/media/aspa.2510b403.png": "/raea/static/media/aspa.2510b403.png"
   },
   "entrypoints": [
     "static/js/runtime-main.94f4c087.js",
-    "static/js/2.34eccba7.chunk.js",
-    "static/css/main.f652465e.chunk.css",
-    "static/js/main.a3e00271.chunk.js"
+    "static/js/2.bd6c19aa.chunk.js",
+    "static/css/main.d15256c5.chunk.css",
+    "static/js/main.095d70a4.chunk.js"
   ]
 }
