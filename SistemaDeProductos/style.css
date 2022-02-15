@@ -1,0 +1,535 @@
+   	body{
+         padding: 0;
+         margin: 0;
+         overflow-x: hidden;
+         background: #ddd;
+      }
+
+
+      header{
+         background: #eee;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+     
+      h1{ 
+         padding: 0 10px;
+         font-size: 25px;
+         color: #555;
+      }
+      .option-accounts{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          list-style: none;
+      }
+      .option-item{
+         color: #333;
+         font-size: 18px;
+         font-weight: lighter;
+         padding: 0px 5px;
+         margin: 0px 10px;
+         cursor: pointer;
+      }
+
+
+      .cajas{
+         width: 450px;
+         height: 450px;
+         background: #111;
+         color: #fff;
+         font-size: 25px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 20px   auto;
+         position: relative;
+         top: 0;
+         left: -450px;
+         opacity: 0;
+         transition: 2.5s;
+      }
+      .cajas.active{
+         opacity: 1;
+         left: 0px;
+         background: #999;
+      }
+      .cajas.flex{
+         width: 100%;
+      }      
+
+
+
+
+      .nombres{
+         display: grid;
+         grid-template-columns: minmax(100px, 1fr);
+
+      }
+      .error{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: #a21;
+         font-size: 35px;
+      }
+      .options{
+         width: 50%;
+      }
+      .imposbile{
+         color: #999;
+      }
+      .posible{
+         font-weight: 500;
+         color: #e8c774;
+      }
+      .posible:hover{
+         color: #de9f00;
+      }
+      .delete:hover{
+          color: #999;
+      }
+
+      .nombre{
+border-top: 1.6px solid #222;
+    background: linear-gradient(
+160deg,#555,#999);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+      }
+      .content-resultados-of-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+      h2{
+         color:#ccc;
+         font-size: 35px;
+         font-weight: 900;
+         padding: 0;
+         margin: 0;
+         text-align: center;
+      }
+      h3{
+    color: #18f523;
+    font-size: 25px;
+    font-weight: revert;
+
+      }
+      button{
+         position: relative;
+         display: inline-block;
+         font-size: 15px;
+         cursor: pointer;
+         background:transparent;
+         padding: 5px;
+         border: none;
+         border-radius:30%;
+         outline: none;
+         margin-left: 25px;
+      } 
+      #btn-add{ 
+         color: #eee;
+         font-size: 15px;
+         font-weight: lighter;
+         text-shadow: 1px 1px 10px #fff;
+      } 
+      .showNames{
+          color: #eee;
+         font-size: 15px;
+         font-weight: lighter;
+         text-shadow:1px 1px 10px #fff;
+      }
+      .contentInputs{
+         display: flex;
+         justify-content: space-evenly;
+         width: 50%;
+         align-items: center;
+      }
+      .resultado{
+      	margin: 15px 0px;
+      	 display: grid;
+      	 grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      	 grid-gap: 6px;
+
+      }
+
+      input{
+      	width: 100%;
+      }
+      .eliminarAcc{
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 18px;
+    font-weight: lighter;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    border-top: 1px solid;
+}
+    .eliminarAcc:hover{
+       color: #fff;
+       background: #b21;
+           border-top: 1px solid;
+    }
+      #monto{
+         width: 150px;
+         padding: 5px;
+         border-radius: 5px;
+         font-size: 15px;
+         font-weight: lighter;
+         border: none;
+         outline: none;
+         color: #eee;
+         background: linear-gradient(60deg,#999,#555);
+      }
+            #monto::placeholder{
+                color: #eee;
+            }
+      .content-add{
+         text-align: center;
+      }
+      #nombre{
+         margin: 10px 0px;
+         display: inline-block;
+         width: 200px;
+         background: linear-gradient(60deg,#999,#555);
+         outline: none;
+         padding: 5px ; 
+         border-radius: 5px;
+         border: none;
+         font-size: 15px;
+         font-weight: lighter;
+         color:#eee;
+      }
+      #nombre option{
+          min-height: 50px;
+          font-size: 15px;
+          font-weight: lighter;
+          color:#fff;
+          background:#555;
+      }
+      .options-btn{
+          padding: 5px 0px;
+          background: linear-gradient(60deg,#999,#222);
+          border-radius: 5px 5px 0px 0px;
+      }
+
+  select::-webkit-scrollbar {
+    width: .60rem;
+    background-color:#999;
+}
+select::-webkit-scrollbar-thumb {
+    background-color:#555;
+}
+select:focus > option:checked { 
+    background: #999!important;
+}
+
+.hidden{
+    display: none;
+}
+
+   .numbers{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 150px;
+      padding: 2px 0px;
+    color: #1a0;
+}
+.numbers span{
+   color: #333;
+   font-size: 13px;
+}
+.data-new-acc{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+}
+
+.contents{
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contents label{
+   padding: 5px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ccc;
+}
+   .btn-total{
+     margin: 10px 0;
+     padding: 5px;
+     font-size: 15px;
+     font-weight: 200;
+}
+   .btn-total:hover{
+       background: #eee;
+   }
+
+   .contents input{
+       border-radius: 5px;
+       padding: 10px;
+       width: 200px;
+       outline: none;
+       border: none;
+       background: #ccc;
+       font-size: 12px;
+       font-weight: lighter;
+}
+.container-newAccount h4{
+    margin: 0;
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+   .total-pago{ 
+    width: 290px;
+   border-top: 1px solid #111;
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+}
+   .btn-create-acc input{
+       padding: 5px 20px;
+      font-size: 15px;
+       font-weight: 200;
+       border: none;
+       outline: none;
+       border-radius: 5px;
+       transition: .3s;
+       cursor: pointer; 
+       }
+
+       .btn-create-acc input:hover{
+             background: #222;
+             color: #fff;
+          }
+
+          .errorAcc{
+             font-size: 25px;
+             font-size: 600;
+             text-align: center;
+             color: #a25;
+          }
+
+         .valido{
+            font-size: 25px;
+             font-size: 600;
+             text-align: center;
+             color: #2a2;
+         }
+
+         .container-accounts  h3{
+              text-align: center;
+              font-size: 25px;
+              font-weight: 600;
+              color: #222;
+         }
+       .menu-bar{
+         display: none;
+         padding: 10px;
+         z-index: 100;
+       }
+        .menu-bar i{
+          z-index: 100;
+          font-size: 25px;
+          color: #e36e00;
+        }
+         .contenedor-result{
+position: relative;
+    width: 100%;
+    height: fit-content;
+    background: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+         }
+         .container-newAccount{
+               height: 100vh;
+               background: #fcf8f2;
+         }
+
+         .contenedor-result h2{
+             flex: 1;
+            cursor: pointer;
+             padding: 20px 15px;
+             font-size: 18px;
+             text-align: left;
+             font-weight: lighter;
+             color: #111;
+             border-top: 1px solid #111;
+             transition: .3s;
+         }
+                .contenedor-result h2 b{
+                  color: #614d15;
+                }
+                  .contenedor-result h2:hover{
+                      background: #ccc;
+                  }
+               .result-title{
+                  margin: 0;
+                  padding: 20px 0;
+                  font-size: 25px;
+                  font-weight: 600;
+                  text-align: center;
+                  color: #aaa;
+               }   
+            .container-resultado{
+               background: #eee;
+            }
+
+              .content-resultados-of-buy .monto{
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+              }
+              .contents-result-numbers{
+                width: 290px;
+               padding: 10px 20px;
+               overflow-y: scroll;
+               height: 280px;
+              }
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+}          
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: #999;
+}
+               .nota{
+    position: relative;
+    top: 20px;
+    color: #fff;
+    /* margin-top: 20px; */
+    width: 200px;
+    padding: 10px 20px;
+    background: #555;
+    border-radius: 10px;
+    text-transform: uppercase;
+               }
+                .content-resultados-of-buy .monto h3{
+                  font-size: 18px;
+                  font-weight: 400;
+                  color: #222;
+                  padding: 0 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;              
+                } 
+                .clienteName{
+                  margin: 5px 0px;
+                  color: #1118;
+                  font-weight: 900;
+                }
+                
+                .content-resultados-of-buy .monto span{
+                   font-size: 15px;
+                   font-weight: 300;
+                   color: #67de12;
+                   padding: 0 20px;
+                }
+                .monto-a-pagar{
+                  margin-bottom: 10px;
+                  border-radius: 5px;
+                  background: #ccc;
+                           padding: 10px 5px;
+                }
+                .montoOfAccountClient{
+                    text-transform: uppercase;
+                  color: #fff;
+                  font-size: 20px;
+                  font-weight: 600;
+                }
+
+                  @media screen and  (max-width: 500px){
+                     .option-accounts .option-item{
+                             font-size: 20px;
+    color: #d46802;
+    font-weight: 600;
+    padding: 10px 0px;
+                     }
+                     .menu-bar{
+                        display: block;
+                     }
+                     .option-accounts{
+                        width: 200px;
+                        flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: #ccc;
+    margin: 0;
+    z-index: 100;
+    padding: 50px 20px;
+    background: #f7d1ad;
+    transform: translateX(100%);
+    transition: .3s;
+                     }
+               .option-accounts.active{
+   transform: translateX(0%);
+}
+                     h1{
+                      font-size: 15px;  
+                        }
+
+                        #nombre{
+                      width: 120px;
+                      padding: 10px;
+                      font-size: 15px;
+                     } 
+                     #monto{
+                        width: 120px;
+                        padding: 10px;
+                        font-size: 15px;
+
+                     } 
+                     .options-btn button{
+                         font-size: 20px;
+                     }
+                     #btn-add{
+                       font-size: 20px;
+                     }
+                     h2{
+                       font-size: 29px;
+                     }
+                     .contentInputs{
+                        width: 60%;
+                     }
+                     .options{
+                        width: 40%;
+                     }
+                }
+              }
+  
+  }                

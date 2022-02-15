@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Sistema De Cuentas</title>
+</head>
+<body>
+    
+    <header>
+       <h1>Sistema</h1>
+       <ul class="option-accounts">
+          <li class="option-item newAccount">Cuenta Nueva</li>
+          <li class="option-item accounts">Cuentas</li>
+          <li class="option-item resultados">Resultados</li>
+       </ul>
+       <div class="menu-bar">
+          <i class="ri-menu-line"></i>
+       </div>
+    </header>
+    <section class="container-accounts hidden">
+        <h3>Cuentas</h3>
+        <div class="resultados-accounts">
+           
+        </div>
+    </section>
+    <section class="container-resultado hidden">
+          <p class="nota">
+             nota: Cuando elimines fieados de la cuenta , como un chicle o una galleta, recagar la pagina para que todo se resuelva correctamente.
+          </p>
+         <h3 class="result-title">Resultado de las Cuentas</h3>
+        <div class="content-resultados-of-buy">
+            <div class="monto">
+               <h3 class="nameOfAccountClient">NOMBRE DEL CLIENTE</h3>
+            </div>
+            <div class="monto-a-pagar">
+               <span class="montoOfAccountClient">Monto a pagar</span>
+            </div>
+            <div class="contents-result-numbers">
+                
+            </div>
+            <div class="total-pago">
+                <span class="monto-number">X</span>
+                <b>Monto</b>
+            </div>
+        </div>
+    </section>
+   <section class="container-newAccount hidden">
+       <h4>CREAR UNA CUENTA</h4>
+       <div class="data-new-acc">
+         <div class="content-name-acc contents">
+            <label>NOMBRE</label>
+            <input type="text" class="name-acc" placeholder="Ejemplo: Cuenta de Abel">
+         </div>
+         <div class="content-user-acc contents">
+            <label>NOMBRE DEL CLIENTE</label>
+            <input type="text" placeholder="Ejemplo: Abel Hurtado" class="name-store">
+         </div>
+         <div class="btn-create-acc">
+             <input type="submit" value="Crear" id="createAcc">
+         </div>
+       </div>
+   </section> 
+   <div class="content-add visible">
+      <h1 class="name-account-client"></h1>
+      <div class="content-inputs">
+      <select id="nombre">
+      <option>Arroz</option>
+      <option>Azucar</option>
+      <option>Gaseosa</option>
+      <option>Chicles</option>
+      <option>Galleta: Casino</option>
+      <option>Galleta: Picara</option>
+      <option>Rellenita</option>
+      <option>Galleta: Soda</option>
+      <option>Galleta: Vainia</option>
+      <option>Galleta: Cranell</option>
+      <option>Cocoa</option>
+      <option>Champú</option>
+      <option>Jugo: Liber</option>
+      <option>Jugo: Cifrut</option>
+      <option>Jugo: Pulp</option>
+      <option>Kakun</option>
+      <option>Chocman</option>
+      <option>Papas: Lays</option>
+      <option>Chicito</option>
+      <option>Dorito</option>
+      <option>Cuates</option>
+      <option>Chetos</option>
+      <option>Chistris</option>
+      <option>Yogurt</option>
+      <option>Sivarita</option>
+      <option>Tuco Tallarin</option>
+      <option>Tuco Sivarita</option>
+      <option>Tallarines</option>
+      <option>Mallonesa</option>
+      <option>Mermelada</option>
+      <option>Mantequia</option>
+      <option>Cañonazo</option>
+      <option>Mentitas</option>
+      <option>Chocolate Triangulo</option>
+      <option>Sublime</option>
+      <option>Menestra: Ojo Negro</option>
+      <option>Menestra: Lenteja Serrana</option>
+      <option>Menestra: Castilla</option>
+      <option>Menestra: Panamito</option>
+      <option>Cancha: Serrana</option>
+      <option>Cancha: Perla</option>
+      <option>Lejia</option>
+      <option>Jabon</option>
+      <option>Detergente</option>
+      <option>Aceite</option>
+      <option>Leche</option>
+      <option>Atun</option>
+      <option>Sporade</option>
+      <option>Chupetines</option>
+      </select>
+        <input type="number" id="monto" placeholder="Precio a pagar" spellcheck="false" autocomplete="off">
+        </div>
+        <div class="options-btn">
+           <button id="btn-add">Agregar</button>
+           <button class="showNames">Productos Fiados</button>
+        </div>
+     <div class="nombres"></div>
+   </div>
+<!--    <script type="text/javascript" src="indexedDB.js"></script> -->
+   <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
